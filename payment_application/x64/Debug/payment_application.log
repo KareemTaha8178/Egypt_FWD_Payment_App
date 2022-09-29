@@ -1,12 +1,7 @@
 ﻿  Application.c
-  Server.c
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(9,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(11,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(12,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(13,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(14,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(15,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(16,42): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\Embedded System\payment app\payment_application\payment_application\Server.c(43,7): warning C4013: 'strcmp' undefined; assuming extern returning int
-  Generating Code...
+D:\Embedded System\payment app\payment_application\payment_application\Application.c(25,17): warning C4098: 'appStart': 'void' function returning a value
+D:\Embedded System\payment app\payment_application\payment_application\Application.c(31,17): warning C4098: 'appStart': 'void' function returning a value
+D:\Embedded System\payment app\payment_application\payment_application\Application.c(38,17): warning C4098: 'appStart': 'void' function returning a value
+D:\Embedded System\payment app\payment_application\payment_application\Application.c(43,17): warning C4098: 'appStart': 'void' function returning a value
+D:\Embedded System\payment app\payment_application\payment_application\Application.c(48,17): warning C4098: 'appStart': 'void' function returning a value
   payment_application.vcxproj -> D:\Embedded System\payment app\payment_application\x64\Debug\payment_application.exe

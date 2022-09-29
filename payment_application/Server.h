@@ -28,6 +28,7 @@ typedef enum EN_transState_t
 	APPROVED,
 	DECLINED_INSUFFECIENT_FUND,
 	DECLINED_STOLEN_CARD,
+	FRAUD_CARD,
 	INTERNAL_SERVER_ERROR
 }EN_transStat_t;
 
@@ -49,9 +50,18 @@ typedef enum EN_serverError_t
 	LOW_BALANCE
 }EN_serverError_t;
 
+
+typedef enum EN_accountState_t
+{
+	RUNNING,
+	BLOCKED
+}EN_accountState_t;
+
+
 typedef struct ST_accountsDB_t
 {
 	float balance;
+	EN_accountState_t state;
 	uint8 primaryAccountNumber[20];
 }ST_accountsDB_t;
 
@@ -63,6 +73,7 @@ typedef struct ST_accountsDB_t
 
 EN_transStat_t	 recieveTransactionData(ST_transaction* transData);
 EN_serverError_t isValidAccount(ST_cardData_t* cardData);
+EN_serverError_t isBlockedAccount(ST_accountsDB_t* accountRefrence);
 EN_serverError_t isAmountAvailable(ST_terminalData_t* termData);
 EN_serverError_t saveTransaction(ST_transaction* transData);
 EN_serverError_t getTransaction(uint32 transactionSequenceNumber, ST_transaction* transData);
